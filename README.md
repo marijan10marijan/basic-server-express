@@ -1,4 +1,4 @@
-# basic-server-express
+# Express.js Server
 
 ## In this repo, I'm going to show you how to create a basic Express.js server for your web applications. We will go over starting the server, setting up simple routes, and outputting various types of data.
 
@@ -21,17 +21,17 @@
 
 >// on the request to root (localhost:3000/)
 #### app.get('/', function (req, res) {
-####     res.send('<b>My</b> first express http server');
+#### &nbsp;&nbsp;&nbsp;&nbsp; res.send('<b>My</b> first express http server');
 #### });
 
 >// On localhost:3000/welcome
 #### app.get('/welcome', function (req, res) {
-####     res.send('<b>Hello</b> welcome to my http server made with express');
+#### &nbsp;&nbsp;&nbsp;&nbsp;  res.send('<b>Hello</b> welcome to my http server made with express');
 #### });
 
 >// start the server in the port 3000 !
 #### app.listen(3000, function () {
-####     console.log('Example app listening on port 3000.');
+#### &nbsp;&nbsp;&nbsp;&nbsp; console.log('Example app listening on port 3000.');
 #### });
 4. Now save the content and execute the server using the following command in your Node.js command prompt:
    * node server.js
