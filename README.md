@@ -9,29 +9,29 @@
 
 2. Requirement
    - Add Express as a dependency in your project, to add it use the following command in the Node.js command prompt:
-* npm install express
+   * npm install express
 
 
 3. Example of express Server
    - To create your first http server with express, create a js file with the name server.js and add the following code on it:
 
 >// Require express and create an instance of it
-var express = require('express');
-var app = express();
+#### var express = require('express');
+#### var app = express();
 
 >// on the request to root (localhost:3000/)
-app.get('/', function (req, res) {
-    res.send('<b>My</b> first express http server');
-});
+#### app.get('/', function (req, res) {
+####     res.send('<b>My</b> first express http server');
+#### });
 
 >// On localhost:3000/welcome
-app.get('/welcome', function (req, res) {
-    res.send('<b>Hello</b> welcome to my http server made with express');
-});
+#### app.get('/welcome', function (req, res) {
+####     res.send('<b>Hello</b> welcome to my http server made with express');
+#### });
 
 >// start the server in the port 3000 !
-app.listen(3000, function () {
-    console.log('Example app listening on port 3000.');
-});
+#### app.listen(3000, function () {
+####     console.log('Example app listening on port 3000.');
+#### });
 4. Now save the content and execute the server using the following command in your Node.js command prompt:
-* node server.js
+   * node server.js
